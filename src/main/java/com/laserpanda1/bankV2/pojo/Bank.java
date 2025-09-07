@@ -32,6 +32,8 @@ public class Bank {
 
     private String rating;
 
+    private String contactEmail;
+
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<BankAccount> accounts = new ArrayList<>();
 
